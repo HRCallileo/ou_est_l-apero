@@ -12,3 +12,7 @@
         transform: translateY(0);
     }
 }
+
+.card-img-top{
+    height: 200px;
+}
