@@ -17,7 +17,7 @@ function displayCountries(countries) {
         const countryTime = new Date().toLocaleString("en-US", {timeZone: country.timezone});
         const countryHour = new Date(countryTime).getHours();
 
-        if (countryHour >= 0 && countryHour < 21) {
+        if (countryHour >= 19 && countryHour < 21) {
             const flagUrl = `./assets/flags/${country.code}.png`;
             const cardDiv = document.createElement('div');
             cardDiv.classList.add('col-md-4');
