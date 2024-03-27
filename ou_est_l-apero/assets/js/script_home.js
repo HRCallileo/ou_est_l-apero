@@ -3,7 +3,7 @@ const aperoCountries = document.getElementById('aperoCountries');
 // Fonction pour charger les données des pays depuis le fichier JSON
 async function loadCountriesData() {
     try {
-        const response = await fetch('./assets/js/countries.json');
+        const response = await fetch('./ou_est_l-apero/assets/js/countries.json');
         const countries = await response.json();
         return countries;
     } catch (error) {
@@ -18,7 +18,7 @@ function displayCountries(countries) {
         const countryHour = new Date(countryTime).getHours();
 
         if (countryHour >= 19 && countryHour < 21) {
-            const flagUrl = `./assets/flags/${country.code}.png`;
+            const flagUrl = `./ou_est_l-apero/assets/flags/${country.code}.png`;
             const cardDiv = document.createElement('div');
             cardDiv.classList.add('col-md-4');
             cardDiv.innerHTML = `
