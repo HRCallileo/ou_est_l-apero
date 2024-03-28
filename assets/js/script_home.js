@@ -22,12 +22,14 @@ function displayCountries(countries) {
             const cardDiv = document.createElement('div');
             cardDiv.classList.add('col-md-4');
             cardDiv.innerHTML = `
-                <div class="card mb-3 bg-dark border-2 border-white">
+                <div class="card mb-3 bg-secondary border-2 border-white">
                     <img src="${flagUrl}" class="card-img-top" alt="${country.name} Flag">
                     <div class="card-body">
-                        <h5 class="card-title text-center">${country.name}</h5>
-                        <p class="card-text text-center">Alcool typique : ${country.alcohol}</p>
-                        <p class="card-text text-center">(À consommer avec modération)</p>
+                        <h5 class="card-title text-center text-decoration-underline">${country.name}</h5><br>
+                        <p class="card-text text-center text-decoration-underline">Alcool typique :</p>
+                        <p class="card-text text-center">${country.alcohol}</p><br>
+                        <p class="card-text text-center text-decoration-underline">Apéritifs typique :</p>
+                        <p class="card-text text-center">${country.apéritif}</p>
                     </div>
                 </div>
             `;
