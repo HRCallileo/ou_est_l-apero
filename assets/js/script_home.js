@@ -1,17 +1,17 @@
-const aperoCountries = document.getElementById('aperoCountries');
+// Get the element where countries will be displayed
+const countriesList = document.getElementById('countriesList');
 
-// Fonction pour charger les données des pays depuis le fichier JSON
+// Async function to load country data from a JSON file
 async function loadCountriesData() {
     try {
-        const response = await fetch('./assets/js/countries.json');
+        const response = await fetch('../assets/js/countries.json');
         const countries = await response.json();
         return countries;
     } catch (error) {
-        console.error('Une erreur s\'est produite lors du chargement des données des pays :', error);
+        console.error('Une erreur s\'est produite lors du chargement des données des pays:', error);
     }
 }
 
-// Fonction pour afficher les pays avec leurs informations
 function displayCountries(countries) {
     countries.forEach(country => {
         const countryTime = new Date().toLocaleString("en-US", {timeZone: country.timezone});
@@ -37,8 +37,7 @@ function displayCountries(countries) {
         }
     });
 }
-
-// Chargement des données des pays et affichage
+// Load country data and display it
 loadCountriesData()
     .then(countries => displayCountries(countries))
-    .catch(error => console.error('Une erreur s\'est produite :', error));
+    .catch(error => console.error('Une erreur s\'est produite:', error));
