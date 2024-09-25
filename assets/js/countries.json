@@ -1,5 +1,6 @@
 [
     { "name": "France", "code": "FR", "alcohol": "Vin rouge", "timezone": "Europe/Paris", "apéritif": "Escargots à la Bourguignonne" },
+    { "name": "Lastibourg", "code": "FR", "alcohol": "Vody 22%", "timezone": "Europe/Paris", "apéritif": "Gigot d'agneau avec ses patates douces piquées à l'ail svp" },
     { "name": "Allemagne", "code": "DE", "alcohol": "Bière", "timezone": "Europe/Berlin", "apéritif": "Currywurst" },
     { "name": "Royaume-Uni", "code": "GB", "alcohol": "Gin", "timezone": "Europe/London", "apéritif": "Scotch Eggs" },
     { "name": "États-Unis", "code": "US", "alcohol": "Bourbon", "timezone": "America/New_York", "apéritif": "Buffalo Wings" },
