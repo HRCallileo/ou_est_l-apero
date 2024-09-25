@@ -2,7 +2,7 @@
 const countriesList = document.getElementById('countriesList');
 
 // Async function to load country data from a JSON file
-async function loadCountriesData() {
+function loadCountriesData() {
     try {
         const response = await fetch('../assets/js/countries.json');
         const countries = await response.json();
